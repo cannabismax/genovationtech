@@ -89,21 +89,36 @@
         </section>
 
         <!-- FAQ Section -->
-        <section id="faq" class="section">
-            <div class="container">
-                <h2>Frequently Asked Questions</h2>
-                <div class="faq-item">
-                    <h4>What is Remote Monitoring and Management (RMM)?</h4>
-                    <p>RMM is a proactive IT solution that helps businesses monitor and manage their IT infrastructure remotely.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>How does RMM save costs compared to traditional IT support?</h4>
-                    <p>RMM reduces downtime, automates updates, and prevents costly issues, saving businesses up to 30-40%.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>How secure is remote monitoring?</h4>
-                    <p>Our RMM platform uses encrypted connections, multi-factor authentication, and access controls to ensure security.</p>
-                </div>
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h4>What is RMM?</h4>
+                <p>RMM stands for Remote Monitoring and Management, a service that allows IT professionals to remotely monitor, manage, and secure endpoints.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How does RMM benefit my business?</h4>
+                <p>RMM helps in reducing downtime, improving security, and managing IT resources more efficiently, leading to cost savings and operational smoothness.</p>
+            </div>
+            <!-- Add more FAQ items here -->
+            <div class="faq-item">
+                <h4>Is RMM suitable for small businesses?</h4>
+                <p>Yes, RMM solutions are scalable and can be tailored to meet the needs of small businesses, providing them with enterprise-level IT management capabilities.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Can RMM prevent cyber attacks?</h4>
+                <p>While RMM can enhance security measures through real-time monitoring and patch management, it's one part of a broader cybersecurity strategy. It significantly reduces the risk but doesn't guarantee prevention against all cyber threats.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How often should RMM updates be performed?</h4>
+                <p>Updates should be performed regularly, ideally in real-time or at least daily, to ensure all systems are up-to-date with the latest security patches and software updates.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What happens if there's a power outage?</h4>
+                <p>During a power outage, RMM systems typically resume operations once power is restored. However, having a backup power solution can ensure continuous monitoring.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Can I integrate RMM with my existing IT tools?</h4>
+                <p>Most RMM solutions are designed to integrate with a variety of IT tools and platforms, enhancing their functionality and providing a unified management interface.</p>
             </div>
         </section>
 
@@ -121,3 +136,15 @@
     </div>
     <p>&copy; 2024 Your RMM Services. All rights reserved.</p>
 </footer>
+
+<!-- Add this script at the end of your HTML body -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                this.classList.toggle('active');
+            });
+        });
+    });
+    </script>
