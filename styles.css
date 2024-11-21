@@ -205,3 +205,35 @@ footer {
     max-width: 100px;
     margin-bottom: 10px;
 }
+
+/* Header Styling */
+header {
+    background-color: #bebebe; /* Change to your logo's background color */
+    padding: 20px 0;
+    position: relative;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #bebebe; /* Same color as the header */
+    padding: 20px 0;
+    text-align: center;
+    color: #333; /* Adjust text color if needed for contrast */
+}
+
+.logo-image, .footer-logo-image {
+    height: 50px; /* Adjust as needed */
+    width: auto;  /* Maintain aspect ratio */
+    vertical-align: middle;
+    border: 2px solid #e0e0e0; /* Light border for contrast */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+header nav a, footer p {
+    color: #333; /* Dark text for light backgrounds */
+}
+
+header nav a:hover {
+    color: #007bff; /* Example hover color */
+}
