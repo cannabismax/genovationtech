@@ -1,94 +1,75 @@
-
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
 }
 
 header {
-    background-color: #0056b3;
+    background-color: #3498db;
     color: white;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Logo Section Background */
-header .logo {
-    background: linear-gradient(to right, #0056b3, #007bff); /* Match logo gradient */
-    padding: 10px;
-    border-radius: 5px;
-}
-
-header .logo-image {
-    max-width: 120px;
-    height: auto;
-}
-
-header ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-header ul li {
-    margin: 0 15px;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-header ul li a:hover {
-    color: #f8f9fa;
-}
-
-/* Hero Section */
-#hero {
+    padding: 1em;
     text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(to right, #0056b3, #007bff);
+}
+
+nav {
+    background-color: #2980b9;
+    padding: 0.5em;
+    text-align: center;
+}
+
+nav a {
     color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
 }
 
-.hero-content {
-    max-width: 600px;
-    margin: auto;
+nav a:hover {
+    background-color: #3498db;
 }
 
-.hero-logo {
-    max-width: 200px;
-    margin-top: 20px;
+.hero {
+    text-align: center;
+    padding: 2em;
+    background-color: #ecf0f1;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.feature {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
 }
 
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    color: #0056b3;
-    background-color: white;
+    background-color: #2980b9;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    margin-top: 1em;
 }
 
 .cta-button:hover {
-    background-color: #f8f9fa;
+    background-color: #3498db;
 }
 
 /* Section Styling */
@@ -145,95 +126,23 @@ header ul li a:hover {
     color: #007bff;
 }
 
-/* FAQ Section */
-#faq {
-    background-color: #f9f9f9;
-    padding: 50px 0;
-}
-
-#faq h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.faq-item {
-    background: #fff;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-.faq-item:hover {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.faq-item h4 {
-    margin-bottom: 10px;
-    color: #007bff;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.faq-item h4:hover {
-    color: #0056b3;
-}
-
-/* Add this to your CSS for toggle effect */
-.faq-item p {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-}
-
-.faq-item.active p {
-    max-height: 500px; /* Adjust this value based on content */
-    transition: max-height 0.3s ease-in;
-}
-
-/* Footer Background */
 footer {
-    background: linear-gradient(to right, #0056b3, #007bff); /* Match logo gradient */
+    background-color: #34495e;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-.footer-logo-image {
-    max-width: 100px;
-    margin-bottom: 10px;
-}
-
-/* Header Styling */
-header {
-    background-color: #bebebe; /* Change to your logo's background color */
-    padding: 20px 0;
-    position: relative;
-    z-index: 1000; /* Ensures it stays on top */
-}
-
-/* Footer Styling */
-footer {
-    background-color: #bebebe; /* Same color as the header */
-    padding: 20px 0;
-    text-align: center;
-    color: #333; /* Adjust text color if needed for contrast */
-}
-
-.logo-image, .footer-logo-image {
-    height: 50px; /* Adjust as needed */
-    width: auto;  /* Maintain aspect ratio */
-    vertical-align: middle;
-    border: 2px solid #e0e0e0; /* Light border for contrast */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
-}
-
-header nav a, footer p {
-    color: #333; /* Dark text for light backgrounds */
-}
-
-header nav a:hover {
-    color: #bebebe; /* Example hover color */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
 }

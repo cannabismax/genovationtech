@@ -1,73 +1,119 @@
-faq_html = """
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frequently Asked Questions</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Genovation Technologies - FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #2980b9;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+        }
+        .content {
+            padding: 2em;
+            max-width: 800px;
+            margin: auto;
+        }
+        h2, h4 {
+            color: #2980b9;
+        }
+        .faq-item {
+            margin-bottom: 1em;
+        }
+        .faq-item h4 {
+            margin-bottom: 0.5em;
+        }
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer-logo-image {
+            max-width: 100px;
+            height: auto;
+        }
+    </style>
 </head>
-
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html"><img src="Images/genovation_logo.png" alt="GenovationTech Logo" class="logo-image"></a>
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Genovation Technologies</h1>
     </header>
-
-    <main>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="content">
+        <!-- FAQ Section -->
         <section id="faq" class="section">
             <h2>Frequently Asked Questions</h2>
             <div class="faq-item">
-                <h4 id="faq1">What is RMM?</h4>
-                <h4>What is RMM?</h4>
-                <p>RMM stands for Remote Monitoring and Management, a service that allows IT professionals to remotely monitor, manage, and secure endpoints.</p>
+                <h4>What is Remote Monitoring and Management (RMM)?</h4>
+                <p>RMM is a proactive IT solution that helps businesses monitor and manage their IT infrastructure remotely.</p>
             </div>
             <div class="faq-item">
-                <h4 id="faq2">What is RMM?</h4>
-                <h4>How does RMM benefit my business?</h4>
-                <p>RMM helps in reducing downtime, improving security, and managing IT resources more efficiently, leading to cost savings and operational smoothness.</p>
+                <h4>How does RMM save costs compared to traditional IT support?</h4>
+                <p>RMM reduces downtime, automates updates, and prevents costly issues, saving businesses up to 30-40%.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How secure is remote monitoring?</h4>
+                <p>Our RMM platform uses encrypted connections, multi-factor authentication, and access controls to ensure security.</p>
+            </div>
+            <!-- Add more FAQ items here -->
+            <div class="faq-item">
+                <h4>Is RMM suitable for small businesses?</h4>
+                <p>Yes, RMM solutions are scalable and can be tailored to meet the needs of small businesses, providing them with enterprise-level IT management capabilities.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Can RMM prevent cyber attacks?</h4>
+                <p>While RMM can enhance security measures through real-time monitoring and patch management, it's one part of a broader cybersecurity strategy. It significantly reduces the risk but doesn't guarantee prevention against all cyber threats.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How often should RMM updates be performed?</h4>
+                <p>Updates should be performed regularly, ideally in real-time or at least daily, to ensure all systems are up-to-date with the latest security patches and software updates.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What happens if there's a power outage?</h4>
+                <p>During a power outage, RMM systems typically resume operations once power is restored. However, having a backup power solution can ensure continuous monitoring.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Can I integrate RMM with my existing IT tools?</h4>
+                <p>Most RMM solutions are designed to integrate with a variety of IT tools and platforms, enhancing their functionality and providing a unified management interface.</p>
             </div>
         </section>
-    </main>
-
-                <!-- Add more FAQ items here -->
-                <div class="faq-item">
-                    <h4>Is RMM suitable for small businesses?</h4>
-                    <p>Yes, RMM solutions are scalable and can be tailored to meet the needs of small businesses, providing them with enterprise-level IT management capabilities.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Can RMM prevent cyber attacks?</h4>
-                    <p>While RMM can enhance security measures through real-time monitoring and patch management, it's one part of a broader cybersecurity strategy. It significantly reduces the risk but doesn't guarantee prevention against all cyber threats.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>How often should RMM updates be performed?</h4>
-                    <p>Updates should be performed regularly, ideally in real-time or at least daily, to ensure all systems are up-to-date with the latest security patches and software updates.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>What happens if there's a power outage?</h4>
-                    <p>During a power outage, RMM systems typically resume operations once power is restored. However, having a backup power solution can ensure continuous monitoring.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>Can I integrate RMM with my existing IT tools?</h4>
-                    <p>Most RMM solutions are designed to integrate with a variety of IT tools and platforms, enhancing their functionality and providing a unified management interface.</p>
-                </div>
-            </section>
-            <footer>
-                <div class="footer-logo">
-                    <img src="Images/genovation_logo.png" alt="GenovationTech Logo" class="footer-logo-image">
-                </div>
-                <p>&copy; 2024 Your RMM Services. All rights reserved.</p>
-            </footer>
-        </body>
-
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <img src="Images/genovation_logo.png" alt="GenovationTech Logo" class="footer-logo-image">
+        </div>
+        <p>&copy; 2024 Genovation Technologies. All rights reserved.</p>
+    </footer>
+</body>
 </html>
