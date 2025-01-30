@@ -3,39 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genovation Technologies - Under Construction</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        .content {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-    </style>
+    <title>Genovation Technologies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="content">
-        <img src="under construction.jpg" alt="Tower under construction">
-        <h1>On this site will soon rise Genovation Technologies</h1>
-        <p>We're hard at work building something amazing. Please check back soon!</p>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Business Technology</h1>
+            <p class="mt-3">24/7 Managed IT Services & Enterprise Solutions</p>
+            <a href="contact.html" class="btn btn-primary mt-4">Schedule Free Consultation</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="featured-services">
+            <h2 class="text-center mb-5">Core Solutions</h2>
+            <div class="services-grid">
+                <div class="card">
+                    <i class="fas fa-shield-alt fa-3x text-primary"></i>
+                    <h3 class="mt-3">Cybersecurity Protection</h3>
+                    <p>Enterprise-grade security solutions with real-time threat detection</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-cloud fa-3x text-primary"></i>
+                    <h3 class="mt-3">Cloud Management</h3>
+                    <p>Full-service cloud migration and optimization strategies</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-network-wired fa-3x text-primary"></i>
+                    <h3 class="mt-3">Network Infrastructure</h3>
+                    <p>Design, implementation, and monitoring of business networks</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose mt-6">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Why Partner With Us?</h2>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check-circle"></i> 30+ Years Industry Experience</li>
+                        <li><i class="fas fa-check-circle"></i> 99.9% Uptime Guarantee</li>
+                        <li><i class="fas fa-check-circle"></i> 24/7/365 Technical Support</li>
+                        <li><i class="fas fa-check-circle"></i> Customized Service Packages</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400" alt="IT Support Team" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <section class="clients-section mt-6">
+            <h3 class="text-center mb-4">Trusted By Industry Leaders</h3>
+            <div class="client-logos">
+                <img src="https://via.placeholder.com/150x50" alt="Client 1">
+                <img src="https://via.placeholder.com/150x50" alt="Client 2">
+                <img src="https://via.placeholder.com/150x50" alt="Client 3">
+                <img src="https://via.placeholder.com/150x50" alt="Client 4">
+            </div>
+        </section>
     </div>
+
+    <section class="cta-banner mt-6">
+        <div class="container text-center">
+            <h2>Ready to Optimize Your IT Infrastructure?</h2>
+            <p class="mt-3">Schedule a free technology assessment with our experts</p>
+            <a href="contact.html" class="btn btn-outline-light mt-3">Get Started Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Tech Valley, Silicon Valley, CA</p>
+                    <p><i class="fas fa-phone"></i> 1-800-555-1234</p>
+                    <p><i class="fas fa-envelope"></i> info@genovationtech.com</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="about.html">About Company</a>
+                    <a href="services.html">Service Catalog</a>
+                    <a href="contact.html">Request Quote</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2023 Genovation Technologies. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
