@@ -176,3 +176,12 @@ footer {
   padding: 1rem;
   font-size: 1.1rem;
 }
+
+/* Adjust button size */
+.btn-consultation {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  width: auto;
+  display: inline-block;
+  margin-top: 1.5rem;
+}
